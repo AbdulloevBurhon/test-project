@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
-
 function Logo() {
   return (
-    <Link
+    <div
       className="
         flex items-center gap-2
         select-none
@@ -39,7 +37,7 @@ function Logo() {
         Skill
         <span className="text-orange-400 group-hover:text-orange-500">Up</span>
       </span>
-    </Link>
+    </div>
   );
 }
 
