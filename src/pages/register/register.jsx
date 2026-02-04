@@ -164,6 +164,7 @@ function Register() {
   return (
     <section
       className="
+      py-3
         min-h-[calc(100vh-64px)]
         flex items-center justify-center
         bg-gradient-to-br
