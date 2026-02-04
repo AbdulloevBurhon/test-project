@@ -1,0 +1,111 @@
+/* ==================================================
+   ACTIVE FONTS (INSTALLED ONLY)
+   --------------------------------------------------
+   Этот файл подключается в index.css:
+   @import "./font.css";
+   --------------------------------------------------
+   УСТАНОВКА (npm):
+   --------------------------------------------------
+
+
+   tailwindcss(),
+  
+@import "tailwindcss";
+
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-2xsm: 375px;
+  --breakpoint-xsm: 425px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-3xl: 2000px;
+  --breakpoint-2xl: 1536px;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+npm install @fontsource/inter
+
+npm install @fontsource/jetbrains-mono
+
+npm install @fontsource/roboto
+
+npm install tailwindcss @tailwindcss/vite
+
+npm install @mui/material @emotion/react @emotion/styled
+
+npm install @mui/icons-material
+
+npm install react-i18next i18next --save
+   ================================================== */
+
+/* ✅ index.css
+@import "tailwindcss";
+@import "./font.css";
+*/
+
+/* ==================================================
+   FONT WEIGHTS (Tailwind)
+   --------------------------------------------------
+   Вес   Tailwind класс
+   300   font-light
+   400   font-normal   ✅
+   500   font-medium
+   600   font-semibold
+   700   font-bold
+   ================================================== */
+
+/* ==================================================
+   Roboto — UI / Default (Material-like)
+   --------------------------------------------------
+   Использование:
+   className="font-roboto font-normal"
+   className="font-roboto font-bold"
+   ================================================== */
+@import "@fontsource/roboto/400.css"; /* Regular */
+@import "@fontsource/roboto/700.css"; /* Bold */
+
+/* ==================================================
+   Inter — UI / Default / Text
+   --------------------------------------------------
+   Использование:
+   className="font-inter font-normal"
+   className="font-inter font-bold"
+   ================================================== */
+@import "@fontsource/inter/400.css"; /* Regular */
+@import "@fontsource/inter/700.css"; /* Bold */
+
+/* ==================================================
+   JetBrains Mono — Code / Debug / Monospace
+   --------------------------------------------------
+   Использование:
+   className="font-mono font-normal"
+   className="font-mono font-bold"
+   ================================================== */
+@import "@fontsource/jetbrains-mono/400.css"; /* Regular */
+@import "@fontsource/jetbrains-mono/700.css"; /* Bold */
+
+/* ==================================================
+   Tailwind Utilities
+   --------------------------------------------------
+   Кастомные классы шрифтов
+   ================================================== */
+@layer utilities {
+  /* UI / Default font (Material style) */
+  .font-roboto {
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* Modern UI */
+  .font-inter {
+    font-family: "Inter", sans-serif;
+  }
+
+  /* Monospace / Code */
+  .font-mono {
+    font-family: "JetBrains Mono", monospace;
+  }
+}

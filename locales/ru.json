@@ -1,0 +1,23 @@
+{
+  "home": {
+    "title": "Добро Пожаловать в ",
+    "desk": "Прокачай свои навыки, учись быстрее и построй успешную карьеру с SkillUp.",
+    "skillUp": "Skill",
+    "login": "Войти",
+    "register": "Регистрация"
+  },
+  "login": {
+    "login": "Войти",
+    "register": "Регистрация",
+    "title": "С возвращением",
+    "subtitle": "Войдите, чтобы продолжить",
+    "email": "Email",
+    "password": "Пароль",
+    "submit": "Войти",
+
+    "errors": {
+      "emailRequired": "Введите email",
+      "passwordRequired": "Введите пароль"
+    }
+  }
+}

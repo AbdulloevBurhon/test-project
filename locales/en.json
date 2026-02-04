@@ -1,0 +1,23 @@
+{
+  "home": {
+    "title": "Welcome to",
+    "desk": "Upgrade your skills, learn faster, and build a successful career with SkillUp.",
+    "skillUp": "Skill",
+    "login": "Login",
+    "register": "Register"
+  },
+  "login": {
+    "login": "Login",
+    "register": "Register",
+    "title": "Welcome Back",
+    "subtitle": "Sign in to continue",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Login",
+
+    "errors": {
+      "emailRequired": "Enter your email",
+      "passwordRequired": "Enter your password"
+    }
+  }
+}
