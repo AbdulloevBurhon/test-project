@@ -5,7 +5,7 @@ import Layout from "../components/layout/layout";
 import Home from "../pages/home/home"; // Главная (до входа)
 import Login from "../pages/login/login";
 import Register from "../pages/register/register";
-import Profile from "../pages/profile/Profile"; // после входа
+import Profile from "../pages/profile/profile"; // после входа
 
 export const router = createBrowserRouter([
   {
