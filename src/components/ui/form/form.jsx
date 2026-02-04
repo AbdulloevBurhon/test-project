@@ -1,6 +1,7 @@
 function Form({ children, onSubmit, className = "" }) {
   return (
     <form
+      noValidate
       onSubmit={onSubmit}
       className={`
         w-full

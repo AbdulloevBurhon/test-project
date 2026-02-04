@@ -7,17 +7,49 @@
     "register": "Register"
   },
   "login": {
-    "login": "Login",
-    "register": "Register",
     "title": "Welcome Back",
     "subtitle": "Sign in to continue",
+    "noAccount": "Don't have an account?",
+
     "email": "Email",
     "password": "Password",
     "submit": "Login",
+    "loading": "Signing in...",
+    "register": "Sign up",
+    "forgot": "Forgot password?",
 
     "errors": {
-      "emailRequired": "Enter your email",
-      "passwordRequired": "Enter your password"
+      "emailRequired": "Please enter your email",
+      "emailInvalid": "Invalid email format",
+      "passwordRequired": "Please enter your password",
+      "invalidCredentials": "Incorrect email or password"
+    }
+  },
+  "register": {
+    "title": "Sign Up",
+
+    "name": "Name",
+    "age": "Age",
+    "email": "Email",
+    "password": "Password",
+
+    "submit": "Register",
+    "loading": "Creating account...",
+
+    "haveAccount": "Already have an account?",
+    "login": "Login",
+    "confirmPassword": "Confirm password",
+
+    "errors": {
+      "confirmRequired": "Confirm your password",
+      "confirmNotMatch": "Passwords do not match",
+      "nameRequired": "Enter your name",
+      "ageRequired": "Enter your age",
+      "ageInvalid": "Invalid age",
+      "emailRequired": "Enter email",
+      "emailInvalid": "Invalid email format",
+      "passwordRequired": "Enter password",
+      "passwordShort": "Password must be at least 6 characters"
     }
   }
 }

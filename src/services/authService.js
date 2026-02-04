@@ -18,7 +18,13 @@ export const registerUser = async (email, password, name, age) => {
     name,
     age: Number(age) || 0,
     email: user.email,
+
+    avatar: "", // 👈 фото
+    bio: "", // 👈 описание
+    status: "active",
+
     role: "user",
+
     createdAt: serverTimestamp(),
   });
 

@@ -7,17 +7,48 @@
     "register": "Бақайдгирӣ"
   },
   "login": {
-    "login": "Вуруд",
-    "register": "Бақайдгирӣ",
     "title": "Хуш омадед",
     "subtitle": "Барои идома ворид шавед",
+    "noAccount": "Ҳисоб надоред?",
+
     "email": "Почтаи электронӣ",
     "password": "Рамз",
-    "submit": "Вуруд",
+    "submit": "Ворид шудан",
+    "loading": "Дар ҳоли воридшавӣ...",
+    "register": "Сабти ном",
+    "forgot": "Рамзро фаромӯш кардед?",
 
     "errors": {
-      "emailRequired": "Email-ро ворид кунед",
-      "passwordRequired": "Рамзро ворид кунед"
+      "emailRequired": "Почтаро ворид кунед",
+      "emailInvalid": "Формати почта нодуруст аст",
+      "passwordRequired": "Рамзро ворид кунед",
+      "invalidCredentials": "Логин ё рамз нодуруст аст"
+    }
+  },
+  "register": {
+    "title": "Сабти ном",
+
+    "name": "Ном",
+    "age": "Синну сол",
+    "email": "Почтаи электронӣ",
+    "password": "Рамз",
+
+    "submit": "Сабти ном",
+    "loading": "Сабт шуда истодааст...",
+
+    "haveAccount": "Аллакай ҳисоб доред?",
+    "login": "Ворид шудан",
+    "confirmPassword": "Тасдиқи рамз",
+    "errors": {
+      "confirmRequired": "Рамзро тасдиқ кунед",
+      "confirmNotMatch": "Рамзҳо мувофиқат намекунанд",
+      "nameRequired": "Номро ворид кунед",
+      "ageRequired": "Синну солро ворид кунед",
+      "ageInvalid": "Синну сол нодуруст аст",
+      "emailRequired": "Почтаро ворид кунед",
+      "emailInvalid": "Формати почта нодуруст аст",
+      "passwordRequired": "Рамзро ворид кунед",
+      "passwordShort": "Рамз ҳадди ақал 6 аломат бошад"
     }
   }
 }

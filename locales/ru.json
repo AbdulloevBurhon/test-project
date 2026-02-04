@@ -7,17 +7,50 @@
     "register": "Регистрация"
   },
   "login": {
-    "login": "Войти",
-    "register": "Регистрация",
-    "title": "С возвращением",
+    "title": "Добро пожаловать",
     "subtitle": "Войдите, чтобы продолжить",
-    "email": "Email",
+    "noAccount": "Нет аккаунта?",
+
+    "email": "Электронная почта",
     "password": "Пароль",
     "submit": "Войти",
+    "loading": "Вход...",
+    "register": "Зарегистрироваться",
+    "forgot": "Забыли пароль?",
 
     "errors": {
       "emailRequired": "Введите email",
-      "passwordRequired": "Введите пароль"
+      "emailInvalid": "Неверный формат email",
+      "passwordRequired": "Введите пароль",
+      "invalidCredentials": "Неверный логин или пароль"
+    }
+  },
+  "register": {
+    "title": "Регистрация",
+
+    "name": "Имя",
+    "age": "Возраст",
+    "email": "Электронная почта",
+    "password": "Пароль",
+
+    "submit": "Зарегистрироваться",
+    "loading": "Регистрация...",
+
+    "haveAccount": "Уже есть аккаунт?",
+    "login": "Войти",
+    "confirmPassword": "Подтвердите пароль",
+
+    "errors": {
+      "emailExists": "Этот email уже зарегистрирован",
+      "confirmRequired": "Подтвердите пароль",
+      "confirmNotMatch": "Пароли не совпадают",
+      "nameRequired": "Введите имя",
+      "ageRequired": "Введите возраст",
+      "ageInvalid": "Некорректный возраст",
+      "emailRequired": "Введите почту",
+      "emailInvalid": "Неверный формат почты",
+      "passwordRequired": "Введите пароль",
+      "passwordShort": "Пароль минимум 6 символов"
     }
   }
 }
