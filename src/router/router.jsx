@@ -9,7 +9,7 @@ import Profile from "../pages/profile/profile"; // после входа
 ///// import profil page
 import Cards from "../pages/profile/cards/cards";
 import Iq from "../pages/profile/cards/iq/iq";
-import IqQuestions from "../pages/profile/cards/iq/iqQuestions/IqQuestions";
+import IqQuestions from "../pages/profile/cards/iq/iqQuestions/iqQuestions";
 export const router = createBrowserRouter([
   {
     path: "/",
