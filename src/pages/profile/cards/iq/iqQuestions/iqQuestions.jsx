@@ -359,5 +359,5 @@ function Answer({ text, onClick, active, correct, result }) {
     </button>
   );
 }
-
+//
 export default IqQuestions;
