@@ -6,7 +6,9 @@ import Home from "../pages/home/home"; // Главная (до входа)
 import Login from "../pages/login/login";
 import Register from "../pages/register/register";
 import Profile from "../pages/profile/profile"; // после входа
-
+///// import profil page
+import Cards from "../pages/profile/cards/cards";
+import Iq from "../pages/profile/cards/iq/iq";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -21,7 +23,21 @@ export const router = createBrowserRouter([
       { path: "register", element: <Register /> },
 
       // 👤 После входа
-      { path: "profile", element: <Profile /> },
+      {
+        path: "profile",
+        element: <Profile />,
+
+        children: [
+          // /profile
+          { index: true, element: <Cards /> },
+
+          // /profile/iq
+          { path: "iq", element: <Iq /> },
+
+          // /profile/rating
+          // { path: "rating", element: <Rating /> },
+        ],
+      },
     ],
   },
 ]);

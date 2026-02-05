@@ -27,7 +27,7 @@ function CardList({ title, icon, color }) {
     >
       {icon}
 
-      <span className="mt-1 text-xs sm:text-sm text-center">{title}</span>
+      <span className="mt-1 text-xs text-center sm:text-sm">{title}</span>
     </motion.div>
   );
 }
