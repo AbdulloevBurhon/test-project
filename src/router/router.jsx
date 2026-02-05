@@ -9,6 +9,7 @@ import Profile from "../pages/profile/profile"; // после входа
 ///// import profil page
 import Cards from "../pages/profile/cards/cards";
 import Iq from "../pages/profile/cards/iq/iq";
+import IqQuestions from "../pages/profile/cards/iq/iqQuestions/IqQuestions";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -32,7 +33,17 @@ export const router = createBrowserRouter([
           { index: true, element: <Cards /> },
 
           // /profile/iq
-          { path: "iq", element: <Iq /> },
+          {
+            path: "iq",
+            element: <Iq />,
+
+            children: [
+              {
+                path: ":category", // frontend / backend
+                element: <IqQuestions />,
+              },
+            ],
+          },
 
           // /profile/rating
           // { path: "rating", element: <Rating /> },

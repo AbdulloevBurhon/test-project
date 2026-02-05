@@ -1,19 +1,28 @@
-import { ChevronLeft, Brain, Search, Monitor, ChevronDown } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { ChevronLeft, Brain, Search } from "lucide-react";
+import { useNavigate, useParams, Outlet } from "react-router-dom";
+
 import Button from "../../../../components/ui/button/button";
 import Input from "../../../../components/ui/input/input";
 import CategoryHeader from "./сategoryHeader";
 
 function Iq() {
   const navigate = useNavigate();
+  const { category } = useParams();
+
+  const titles = {
+    frontend: "Вопросы по Frontend",
+    backend: "Вопросы по Backend",
+    unity: "Вопросы по Unity",
+    unreal: "Вопросы по Unreal",
+  };
 
   return (
     <div className="w-full">
       {/* HEADER */}
       <div className="relative flex items-center h-12 sm:h-20">
-        {/* BACK BUTTON */}
+        {/* BACK */}
         <Button
-          onClick={() => navigate("/profile")}
+          onClick={() => navigate(-1)}
           variant="secondary"
           size="icon"
           className="absolute"
@@ -23,41 +32,41 @@ function Iq() {
 
         {/* TITLE */}
         <h1 className="flex items-center gap-2 mx-auto text-lg font-semibold sm:text-xl text-zinc-900 dark:text-white">
-          {/* ИКОНКА */}
           <Brain size={22} className="text-blue-600 dark:text-blue-400" />
-          {/* ТЕКСТ */}
-          IQ Tests
+
+          {category ? titles[category] || "IQ Tests" : "IQ Tests"}
         </h1>
       </div>
 
       {/* CONTENT */}
-      <div className="px-3 py-2 text-black sm:px-6 dark:text-white">
-        <div className="px-1.5 py-1.5 sm:px-6 mb-4 ">
-          <Input
-            type="search"
-            placeholder="Поиск..."
-            leftIcon={Search}
-            className="h-8 sm:h-12"
-          />
-        </div>
-        {/* <div>
-          <div className="flex items-center justify-between py-2">
-            <h1>Сфера It</h1>
-            <div>
-              <div>
-                <Monitor />
-              </div>
-              <div>
-                <ChevronDown />
-              </div>
-            </div>
+      <div className="px-3 py-2 sm:px-6 dark:text-white">
+        {/* SEARCH — только на главной */}
+        {!category && (
+          <div className="px-1.5 py-1.5 sm:px-6 mb-4">
+            <Input
+              type="search"
+              placeholder="Поиск..."
+              leftIcon={Search}
+              className="h-8 sm:h-12"
+            />
           </div>
-        </div> */}
-        <div className="flex flex-col gap-2">
-          <CategoryHeader title="Сфера IT" items={["Frontend", "Backend"]} />
+        )}
 
-          <CategoryHeader title="GameDev" items={["Unity", "Unreal"]} />
-        </div>
+        {/* CATEGORIES — только на главной */}
+        {!category && (
+          <div className="flex flex-col gap-2">
+            <CategoryHeader title="Сфера IT" items={["Frontend", "Backend"]} />
+
+            <CategoryHeader title="GameDev" items={["Unity", "Unreal"]} />
+          </div>
+        )}
+
+        {/* QUESTIONS */}
+        {category && (
+          <div className="">
+            <Outlet />
+          </div>
+        )}
       </div>
     </div>
   );

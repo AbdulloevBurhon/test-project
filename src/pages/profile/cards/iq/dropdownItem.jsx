@@ -1,7 +1,13 @@
-function DropdownItem({ text, onClick }) {
+import { useNavigate } from "react-router-dom";
+
+function DropdownItem({ text }) {
+  const navigate = useNavigate();
+
+  const slug = text.toLowerCase(); // Frontend → frontend
+
   return (
     <button
-      onClick={onClick}
+      onClick={() => navigate(`/profile/iq/${slug}`)} // ✅ ПЕРЕХОД
       className="
         w-full
         text-left
