@@ -177,7 +177,7 @@ function Register() {
           variants={fadeDown}
           initial="hidden"
           animate="show"
-          className="text-3xl font-bold text-center mb-2 dark:text-white"
+          className="mb-2 text-3xl font-bold text-center dark:text-white"
         >
           {t("register.title")}
         </motion.h1>
@@ -197,8 +197,7 @@ function Register() {
           <Form
             noValidate
             onSubmit={handleSubmit}
-            onSubmit={handleSubmit}
-            className="space-y-6 text-left max-w-md mx-auto"
+            className="max-w-md mx-auto space-y-6 text-left"
           >
             {/* Name */}
             <motion.div variants={fadeUp}>
@@ -342,7 +341,7 @@ function Register() {
               {t("register.haveAccount")}{" "}
               <Link
                 to="/login"
-                className="text-blue-600 hover:underline font-medium"
+                className="font-medium text-blue-600 hover:underline"
               >
                 {t("register.login")}
               </Link>
